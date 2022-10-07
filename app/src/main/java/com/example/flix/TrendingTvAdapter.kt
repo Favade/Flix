@@ -52,6 +52,7 @@ class TrendingTvAdapter(private val context: Context, private val trending: List
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra(TRENDING_EXTRA, trend)
             context.startActivity(intent)
+
         }
 
 

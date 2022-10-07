@@ -34,6 +34,10 @@ class DetailActivity: AppCompatActivity() {
             .centerInside()
             .into(trendingImage)
 
+        trendingImage.setOnClickListener{
+            super.finish()
+        }
+
 
     }
 
