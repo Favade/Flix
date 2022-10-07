@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivTrendingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTrendingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivTrendingTv"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Star Wars" />
+
+    <TextView
+        android:id="@+id/releaseDateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTrendingName"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/ivTrendingTv"
+        android:text="Release Date:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvAirDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTrendingName"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivTrendingTv"
+        tools:text="2022-09-21" />
+</RelativeLayout>
+
+    <!-- the card before the click in the intent in recyclerview-->
